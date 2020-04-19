@@ -1,0 +1,83 @@
+.backimg{
+   background: linear-gradient(
+                    rgba(0,0,0, .7), 
+                    rgba(0,0,0, .7)),url('../../assets/images/Homepage_bg.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   min-height: 100vh; 
+}
+  #particles-js{
+    background-image: url(../../assets/images/Homepage_bg.jpg);
+    background-size: cover;
+    height: 100%;
+  
+    background-position: 50% 50%;
+    opacity: 10;
+} 
+.main-logo{
+   background-color: white;
+   display: inline-block;
+   border-top-right-radius: 33.33px;
+   border-bottom-right-radius: 33.33px;
+}
+.main-logo img{
+   padding: 15px 18px 15px 20px;
+   height: 55px;
+}
+.landing-heading{
+   font-size: 30px;
+   font-weight: 300;
+}
+.reg-div{
+   padding: 50px 60px 0px 60px;
+}
+.regimg{
+   max-height: 350px;
+}
+.conference{
+   left: 50%;
+   transform: translateX(-50%);
+   top: 0;
+}
+.sydney{
+   left: 0;
+   top: 50%;
+   transform: translateY(-50%);
+}
+.contact{
+   right: 0;
+   transform: translateY(-50%);
+   top: 50%;
+}
+.links span{
+   color: white;
+   opacity: 0.6;
+   font-weight: 300;
+}
+.links a:hover{
+   text-decoration: none;
+}
+@media (max-width:768px){
+   .regimg{
+       max-height: 300px;
+   }
+}
+@media (max-width:576px){
+   .regimg{
+       max-height: 280px;
+   }
+}
+@media (max-width:360px){
+   .regimg{
+       max-height: 250px;
+   }
+}
+@media (max-width:320px){
+   .regimg{
+       max-height: 200px;
+   }
+}
+
+
+
+

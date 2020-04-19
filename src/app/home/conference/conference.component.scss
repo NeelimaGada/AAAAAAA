@@ -1,0 +1,162 @@
+
+  .content-div{
+    margin-top: -34px;
+    max-height: calc(100vh - 181px);
+    overflow: auto;
+  }
+  .max_height{
+    max-height: 315px;
+  }
+  .fixed_nav{
+    position: sticky;
+    top: 0;
+    background-color: transparent !important;
+    border: none !important;
+  }
+  .fixed_nav a{
+    color: black !important;
+  }
+  .fixed_nav .active-link {
+    color: black !important;
+    border-bottom: 1px solid red;
+  }
+  .back_white{
+    background-color: transparent;
+  }
+  
+  .imagedivs{
+    z-index: -1;
+    width: 390px;
+    height: 250px;
+    /* margin-right: 15px; */
+    margin: 25px 15px 0px 25px;
+    float: left;
+    position: relative;
+    
+  }
+  
+  .img-trnsfm{
+    
+    width:390px;
+    height:250px;
+    position: absolute;
+      transform: translate(-8%, -11%);
+  }
+  .content-heading{
+    font-size: 30px;
+  }
+  .contentpara{
+    font-size: 12px;
+    color: #BCBCBC;
+  }
+  
+  @media (min-width: 1024px) {
+    .togglebtn{
+      display: none;
+    }
+    #sidebar-wrapper {
+      margin-left: 0;
+    }
+  
+    
+  
+    #wrapper.toggled #sidebar-wrapper {
+      margin-left: -15rem;
+    }
+  }
+  @media (max-width:768px){
+    .back_white{
+      background-color: white !important;
+    }
+  }
+  @media (max-width:576px){
+    
+    .imagedivs{
+      width: 320px;
+      
+    }
+    .img-trnsfm{
+      
+      width:320px;
+    }
+  }
+  @media (max-width:375px){
+    .imagedivs{
+      width: 240px;
+      height: 200px;
+    }
+    
+    .img-trnsfm {
+      width: 240px;
+      height: 200px;
+      transform: translate(-12%, -14%);
+  }
+  }
+ 
+  .some-page-wrapper {
+    margin: 15px;
+  }
+  // .locImg{
+  //     margin-right: 80px;
+  // }
+  .contentSecond{
+      margin-left: 200px;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    text-align: center;
+  }
+  
+  .double-column {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+  }
+  
+  .first-column {
+   
+    height: 80px;
+    
+  }
+  
+  .second-column {
+      height: 50px;
+     
+  }
+  .vert_line::after{
+
+    content:" ";
+    position: absolute;
+    background-color:#F5F5F5 ;
+    height: 100%;
+    width: 3px;
+    right: 15px;
+    top: 0;
+    z-index: 1;
+  }
+  .vl {
+    border-left: 2px solid #F2F2F2;
+    height: 50px;
+  }
+.text_resp{
+  text-align: left;
+}
+  @media (max-width:576px){
+    .text_resp{
+      text-align: center;
+    }
+    .vert_line::after{
+      display: none;
+      
+    }
+  }

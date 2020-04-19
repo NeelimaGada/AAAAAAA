@@ -1,0 +1,128 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template-overviews/simple-sidebar)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+ body {
+    overflow-x: hidden;
+  }
+  #wrapper{
+    overflow: hidden;
+      height: 100vh;
+  }
+  .main-logo{
+    background-color: white;
+    display: inline-block;
+    border-top-right-radius: 33.33px;
+    border-bottom-right-radius: 33.33px;
+  }
+  .main-logo img{
+    padding: 15px 18px 15px 20px;
+    height: 55px;
+  }
+  #sidebar-wrapper {
+    height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+    background: linear-gradient(
+                       rgba(0,0,0, .7), 
+                       rgba(0,0,0, .7)),url('../../assets/images/Homepage_bg.jpg');
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: cover;
+  }
+  #rot{
+      font-size: 22px;
+      opacity: 0.5;
+      font-weight: 200;
+  transform: rotate(270deg);
+  transform-origin: bottom;
+      position:absolute;
+      bottom:222px;
+      margin-left:-170px;
+      color: white;
+  }
+  .p-custom{
+    /* padding-left: 115px; */
+    padding-top: 100px;
+  }
+  .right_0{
+    right: 0;
+  }
+  .list-group-item-action{
+  color: #f8f9fa !important;
+  }
+  .sidetabs{
+    border: none;
+    /* color: #f8f9fa; */
+    display: inline-block !important;
+    padding: 10px !important;
+  }
+  .sidetabs.active-link{
+    background: linear-gradient(
+                       rgba(255,255,255, .3), 
+                       rgba(255,255,255, .3));
+    color: white;
+    border-bottom-left-radius: 33.33px;
+    border-top-left-radius: 33.33px;
+  }
+  
+  #sidebar-wrapper .list-group {
+    width: 15rem;
+  }
+  .topnav-img{
+    background: url('../../assets/images/Innerheaderimage.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 215px;
+    position: relative;
+  }
+  .waves{
+    position: relative;
+    bottom: -130px;
+  }
+  .waveImg{
+    width: 110%;
+    height: 100px;
+    
+  }
+  .togglebtn{
+    display: inline;
+  }
+  
+  #page-content-wrapper {
+    min-width: 100vw;
+  }
+  
+  
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+  }
+  
+  @media (min-width: 1024px) {
+    .togglebtn{
+      display: none;
+    }
+    #sidebar-wrapper {
+      margin-left: 0;
+    }
+  
+    #page-content-wrapper {
+      min-width: 0;
+      width: 100%;
+    }
+    #wrapper.toggled #sidebar-wrapper {
+      margin-left: -15rem;
+    }
+    
+  }
+
+  @media (max-width:768px){
+    .waves{
+      position: relative;
+      bottom: -88px;
+    }
+  }

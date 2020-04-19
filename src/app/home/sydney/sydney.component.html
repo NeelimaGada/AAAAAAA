@@ -1,0 +1,42 @@
+<div class="content-div">
+  <nav class="navbar navbar-expand-lg border-bottom fixed_nav p-0 back_white">
+    <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- <div class="d-flex justify-content-around bg-secondary mb-3">
+              <div class="p-2 bg-info"><a>Flex item 1</a></div>
+              <div class="p-2 bg-warning">Flex item 2</div>
+              <div class="p-2 bg-primary">Flex item 3</div>
+            </div> -->
+      <ul class="navbar-nav d-md-flex justify-content-between w-100">
+        <li class="nav-item active">
+          <a class="nav-link pr-2 pt-0 pl-2 pb-2" routerLink="aboutSydney" routerLinkActive="active-link">About
+            Sydney</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  pr-2 pt-0 pl-2 pb-2" routerLink="sydneyNightLife" routerLinkActive="active-link">Sydney Night Life</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  pr-2 pt-0 pl-2 pb-2" routerLink="placeToEat" routerLinkActive="active-link">Place to Eat</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link pr-2 pt-0 pl-2 pb-2" routerLink="placeToShop" routerLinkActive="active-link">Places to Shop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link pr-2 pt-0 pl-2 pb-2" routerLink="placeToVisit" routerLinkActive="active-link">Places to Visit</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link pr-2 pt-0 pl-2 pb-2" routerLink="tipsDuringStay" routerLinkActive="active-link">Tips During Stay</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link pr-2 pt-0 pl-2 pb-2" routerLink="dosandDonts" routerLinkActive="active-link">Do's and Don'ts</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div style="margin-top: 20px;">
+    <router-outlet></router-outlet>
+  </div>
+</div>

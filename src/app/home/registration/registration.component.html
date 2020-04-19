@@ -1,0 +1,374 @@
+<div class="content-div">
+    <nav class="navbar navbar-expand border-bottom fixed_nav p-0 back_white nve-margin">
+        <!-- <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button> -->
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav d-md-flex justify-content-between w-50">
+                <li class="nav-item active">
+                    <a class="nav-link pr-2 pt-0 pl-2 pb-2 active-link" routerLinkActive="active-link">
+                        MC Profile Registration
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="col-md-12 ">
+        <div>
+            <h5 style="margin-top: 6px; margin-bottom: 0px;"><strong>Dear Sir / Madam</strong></h5>
+            <p style="font-size: medium; color: #B2B2B2;">Request you to provide us with the personal information, as
+                per fields mentioned below. The
+                information you will provide
+                will be kept strictly confidential & will only be used to serve you better.
+            </p>
+        </div>
+    </div>
+    <!-- multistep form -->
+    <div class="position-relative ">
+        <form id="msform" class="pt-5">
+            <!-- progressbar -->
+            <ul id="progressbar">
+                <li class="active"> Personal Details</li>
+                <li>Conference Preferences and Details </li>
+                <li> Passport and Visa Details</li>
+            </ul>
+
+            <fieldset class="form-group">
+                <div class="row " id="field1">
+
+                    <div class="col-md-6">
+                        <div class="form-group text_right mb_cus row">
+                            <span class="d-block col-md-4 p-0 my-auto">Name:</span>
+                            <div class="col-md-8 p-0 pl-2">
+                                <input type="text" class="form-control emergencyNo d-inline " id="emergencyNo"
+                                    name="name">
+                            </div>
+                        </div>
+                        <div class="form-group text_right mb_cus row">
+                            <span class="d-block col-md-4 p-0 my-auto">Designation:</span>
+                            <div class="col-md-8 p-0 pl-2">
+                                <input type="text" class="form-control emergencyNo d-inline " id="emergencyNo"
+                                    name="designation">
+                            </div>
+                        </div>
+                        <div class="form-group text_right mb_cus row">
+                            <span class="d-block col-md-4 p-0 my-auto">Mobile No:</span>
+                            <div class="col-md-8 p-0 pl-2">
+                                <input type="text" class="form-control emergencyNo d-inline " id="emergencyNo"
+                                    name="mobileNo">
+                            </div>
+                        </div>
+                        <!-- <div class="form-group text_right mb-0">
+                            <label for="mobileNo">Mobile No:</label>
+                            <input type="mobileNo" class="form-control mobileNo d-inline cst-input" id="mobileNo" name="mobileNo">
+                        </div> -->
+
+                        <div class="form-group text_right mb_cus row">
+                            <span class="d-block col-md-4 p-0 my-auto">Emergency Contact No:<span class="d-block"
+                                    style="font-size: 14px;">(Other than yours)</span></span>
+                            <div class="col-md-8 p-0 pl-2">
+                                <input type="emergencyNo" class="form-control emergencyNo d-inline " id="emergencyNo"
+                                    name="emergencyNo">
+                            </div>
+                        </div>
+                        <div class="form-group text_right mb_cus row">
+                            <span class="d-block col-md-4 p-0 my-auto">Health Issues:</span>
+                            <div class="col-md-8 pl-2 pr-0">
+                                <input type="text" class="form-control emergencyNo d-inline " id="emergencyNo"
+                                    name="healthIssues">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6">
+                        <div class="form-group text_right mb_cus row">
+                            <span class="d-block col-md-4 p-0 my-auto">Hotel:</span>
+                            <div class="col-md-8 p-0 pl-2">
+                                <input type="text" class="form-control emergencyNo d-inline " id="emergencyNo"
+                                    name="hostel">
+                            </div>
+                        </div>
+                        <div class="form-group text_right mb_cus row">
+                            <span class="d-block col-md-4 p-0 my-auto">Organisation:</span>
+                            <div class="col-md-8 p-0 pl-2">
+                                <input type="text" class="form-control emergencyNo d-inline " id="emergencyNo"
+                                    name="organisation">
+                            </div>
+                        </div>
+                        <div class="form-group text_right mb_cus row">
+                            <span class="d-block col-md-4 p-0 my-auto">Phone No:</span>
+                            <div class="col-md-8 p-0 pl-2">
+                                <input type="text" class="form-control emergencyNo d-inline " id="emergencyNo"
+                                    name="phoneNo">
+                            </div>
+                        </div>
+                        <div class="form-group text_right mb_cus row">
+                            <span class="d-block col-md-4 p-0 my-auto">Email :</span>
+                            <div class="col-md-8 p-0 pl-2">
+                                <input type="email" class="form-control emergencyNo d-inline " id="emergencyNo"
+                                    name="email">
+                            </div>
+                        </div>
+                        <div class="form-group text_right mb_cus row">
+                            <span class="d-block col-md-4 p-0">Age Group:</span>
+                            <div class="col-md-8 p-0 pl-2 text-left">
+                                <input type="radio" name="new-england-states" value="ri">25-35&nbsp;&nbsp;&nbsp;
+                                <input type="radio" name="new-england-states" value="ri">36-45&nbsp;&nbsp;&nbsp;
+                                <input type="radio" name="new-england-states" value="ri">46-55&nbsp;&nbsp;&nbsp;
+                                <input type="radio" name="new-england-states" value="ri">56-65&nbsp;&nbsp;&nbsp;<br>
+                                <input type="radio" name="new-england-states" value="ri">Others
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fixedbtm pb-3">
+                    <input type="button" name="next" class="btn next action-button btn-block col-md-3 mx-auto mt-3"
+                        value="Continue" />
+                </div>
+
+            </fieldset>
+            <!-- User's Preferences  -->
+            <fieldset class="form-group one">
+                <div class="row " id="field2">
+
+
+                    <div class="col-md-3 position-relative ver-line">
+                        <h5>Room Requirement</h5><br>
+                        <div class="row">
+
+                            <div class="col-md-6 col-6 form-check">
+                                <input class="form-check-input" type="radio" name="preferences" id="single"
+                                    value="single">
+                                <label class="form-check-label" for="single">Single</label>
+                            </div>
+                            <div class="col-md-6 col-6 form-check">
+                                <input class="form-check-input" type="radio" name="preferences" id="double"
+                                    value="double">
+                                <label class="form-check-label" for="double">Double</label>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-md-5 ver-line  position-relative">
+                        <h5>Food Preference</h5><br>
+                        <div class="row">
+
+                            <div class="col-lg-4 col-6 form-check">
+                                <input class="form-check-input" type="radio" name="preferences" id="vegetarian"
+                                    value="single">
+                                <label class="form-check-label" for="single">Vegetarian</label>
+                            </div>
+                            <div class="col-lg-4 col-6 form-check">
+                                <input class="form-check-input" type="radio" name="preferences" id="nonVeg"
+                                    value="double">
+                                <label class="form-check-label" for="double">Non-vegetarian</label>
+                            </div>
+                            <div class="col-lg-4 col-6 form-check">
+                                <input class="form-check-input" type="radio" name="preferences" id="vegan"
+                                    value="double">
+                                <label class="form-check-label" for="double">Vegan</label>
+                            </div>
+                            <div class="col-lg-2 col-md-6 form-check">
+                                <input class="form-check-input" type="radio" name="preferences" id="jain"
+                                    value="double">
+                                <label class="form-check-label" for="double">Jain</label>
+                            </div>
+                            <span>Note:The entire hotel is a Non-smoking premises </span>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+
+                        <h5>Liquor</h5>
+                        <br>
+                        <div class="row">
+
+                            <div class="col-lg-4 col-6 form-check">
+                                <input class="form-check-input" type="radio" name="preferences" id="single"
+                                    value="single">
+                                <label class="form-check-label" for="single">Whisky</label>
+                            </div>
+                            <div class="col-lg-4 col-6 form-check">
+                                <input class="form-check-input" type="radio" name="preferences" id="double"
+                                    value="double">
+                                <label class="form-check-label" for="double">Vodka</label>
+                            </div>
+                            <div class="col-lg-4 col-6 form-check">
+                                <input class="form-check-input" type="radio" name="preferences" id="bacardi"
+                                    value="double">
+                                <label class="form-check-label" for="double">Bacardi</label>
+                            </div>
+                            <div class="col-lg-4 col-6 form-check">
+                                <input class="form-check-input" type="radio" name="preferences" id="beer"
+                                    value="double">
+                                <label class="form-check-label" for="double">Beer</label>
+                            </div>
+                            <div class="col-lg-4 col-6 form-check">
+                                <input class="form-check-input" type="radio" name="preferences" id="redWine"
+                                    value="double">
+                                <label class="form-check-label" for="double">Red Wine</label>
+                            </div>
+                            <div class="col-lg-4 col-6 form-check">
+                                <input class="form-check-input" type="radio" name="preferences" id="whiteWine"
+                                    value="double">
+                                <label class="form-check-label" for="double">White Wine</label>
+                            </div>
+                            <div class="col-lg-4 col-6 form-check">
+                                <input class="form-check-input" type="radio" name="preferences" id="teetoatler"
+                                    value="double">
+                                <label class="form-check-label" for="double">Teetoatler</label>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <div class="form-group text_right mb_cus row">
+                            <span class="d-block col-md-4 p-0 my-auto">Airline Name:</span>
+                            <div class="col-md-8 p-0 pl-2">
+                                <input type="text" class="form-control emergencyNo d-inline " id="emergencyNo"
+                                    name="airLineName">
+                            </div>
+                        </div>
+                        <div class="form-group text_right mb_cus row">
+                            <span class="d-block col-md-4 p-0 my-auto">Date Of Arrival:</span>
+                            <div class="col-md-8 p-0 pl-2">
+                                <input type="month" class="form-control emergencyNo d-inline " id="emergencyNo"
+                                    name="dateOfArrival">
+                            </div>
+                        </div>
+                        <div class="form-group text_right mb_cus row">
+                            <span class="d-block col-md-4 p-0 my-auto">Time Of Arrival:</span>
+                            <div class="col-md-8 p-0 pl-2">
+                                <input type="time" class="form-control emergencyNo d-inline " id="emergencyNo"
+                                    name="timeOfArrival">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6">
+                        <div class="form-group text_right mb_cus row">
+                            <span class="d-block col-md-4 p-0 my-auto">Flight Number:</span>
+                            <div class="col-md-8 p-0 pl-2">
+                                <input type="text" class="form-control emergencyNo d-inline " id="emergencyNo"
+                                    name="flightNumber">
+                            </div>
+                        </div>
+                        <div class="form-group text_right mb_cus row">
+                            <span class="d-block col-md-4 p-0 my-auto">Date Of Departure:</span>
+                            <div class="col-md-8 p-0 pl-2">
+                                <input type="month" class="form-control emergencyNo d-inline " id="emergencyNo"
+                                    name="dateOfDeparture">
+                            </div>
+                        </div>
+                        <div class="form-group text_right mb_cus row">
+                            <span class="d-block col-md-4 p-0 my-auto">Time Of Departure:</span>
+                            <div class="col-md-8 p-0 pl-2">
+                                <input type="time" class="form-control emergencyNo d-inline " id="emergencyNo"
+                                    name="timeOfDeparture">
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="fixedbtm pb-3 row one">
+                    <span type="button" name="previous" class="previous mt-4 back col-md-2"><span><i
+                                class='fas fa-arrow-left left_arrow mr-2'></i>Back</span></span>
+                    <!-- <input type="button" name="previous" class="previous action-button" value="Previous" /> -->
+                    <input type="button" name="next"
+                        class="btn next action-button btn-block col-md-3 translatex continue offset-md-3 mt-3"
+                        value="Continue" />
+                </div>
+
+            </fieldset>
+            <fieldset class="form-group one">
+                <div class="row " id="field3">
+
+                    <div class="col-md-6">
+                        <div class="form-group text_right mb_cus row">
+                            <span class="d-block col-md-4 p-0 my-auto">Passport No:</span>
+                            <div class="col-md-8 p-0 pl-2">
+                                <input type="number" class="form-control emergencyNo d-inline " id="emergencyNo"
+                                    name="passportNo">
+                            </div>
+                        </div>
+                        <div class="form-group text_right mb_cus row">
+                            <span class="d-block col-md-4 p-0 my-auto">Date Of Birth:</span>
+                            <div class="col-md-8 p-0 pl-2">
+                                <input type="date" class="form-control emergencyNo d-inline " id="emergencyNo"
+                                    name="dob">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group text_right mb_cus row">
+                            <span class="d-block col-md-4 p-0 my-auto">Nationality:</span>
+                            <div class="col-md-8 p-0 pl-2">
+                                <input type="time" class="form-control emergencyNo d-inline " id="emergencyNo"
+                                    name="nationality">
+                            </div>
+                        </div>
+                        <!-- <div class="form-group text_right mr-5 mb-0">
+                            <label for="ageGroup">Visa:</label>&nbsp;&nbsp;
+                            <input type="radio" name="new-england-states" value="ri">Yes
+                            <input type="radio" name="new-england-states" value="ri">No
+                        </div> -->
+                        <div class="form-group text_right mb_cus row">
+                            <label for="ageGroup" class="d-block col-md-4 p-0 my-auto">Visa:</label>
+                            <div class="col-md-8 p-0 pl-2 text-left row">
+                                <div class="col-3 pt-2">
+                                    <input type="radio" name="new-england-states" value="ri" ><label
+                                    for="new-england-states">Yes</label>
+                                </div>
+                                <div class="col-3 pt-2">
+                                    <input type="radio" name="new-england-states1" value="ri" class="col-6"><label
+                                    for="new-england-states1">No</label>
+                                </div>
+                               
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-group text-left mr-5 mb-0">
+                            <h5 style="color: #F4B1B9;">Note:</h5>
+                            <p style="font-size: small; color: #B2B2B2;">Please note: One on One session on 30th May
+                                starts at 0900 hours and the main conference on 31st May starts at 1200hours. One on One
+                                session on 1st June
+                                starts at 0900 hours untill 1830 hours. The check-in time at the hotel is 1500hours,
+                                rooms will not be available prior to that in case you are arriving before 1500
+                                hours, we would strongly recommend pre-booking your room (Room will be booked from prior
+                                day).
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="fixedbtm pb-3 row one">
+                    <span type="button" name="previous" class="previous mt-4 back col-md-2"><i
+                            class='fas fa-arrow-left left_arrow mr-2'></i>back</span>
+                    <input type="submit" name="submit"
+                        class="btn submit action-button btn-block col-md-3 offset-md-3 continue translatex mt-3"
+                        value="Register Now" />
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+</div>

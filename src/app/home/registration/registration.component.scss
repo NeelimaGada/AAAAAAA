@@ -1,0 +1,253 @@
+/*custom font*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+/*basic reset*/
+.content-div{
+    // margin-top: -34px;
+    height: calc(100vh - 181px);
+    overflow: auto;
+  }
+  .nve-margin{
+    margin-top: -34px;
+  }
+  .ver-line::after{
+    position: absolute;
+    content: "";
+    background-color: #666;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    right: 15px;
+  }
+  .fixed_nav{
+    position: fixed;
+    width: 360px;
+    background-color: transparent !important;
+    border: none !important;
+  }
+  .fixed_nav a{
+    color: black !important;
+  }
+  .fixed_nav .active-link {
+    color: black !important;
+    border-bottom: 1px solid red;
+  }
+  .back_white{
+    background-color: transparent;
+  }
+
+
+/*form styles*/
+.text_right{
+    text-align: right;
+}
+#msform {
+	width: 100%;
+	/* margin: 50px auto;
+	text-align: center; */
+	position: relative;
+}
+#msform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 3px;
+    /* box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4); */
+    padding: 20px 30px 200px 20px;
+    box-sizing: border-box;
+    width: 99%;
+    margin: 0 1% 0 1%;
+    position: relative;
+    min-height: 75vh;
+}
+.fixedbtm::before{
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: #BCBCBC;
+  top: 0px;
+
+  left: -15px;
+}
+.fixedbtm.one::before{
+  left:0;
+}
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+	display: none;
+}
+/*inputs*/
+/* #msform input, #msform textarea {
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #2C3E50;
+	font-size: 13px;
+} */
+/*buttons*/
+#msform .action-button {
+    /* width: 180px; */
+    background: red !important;
+    /* font-weight: bold; */
+    color: white !important;
+    /* border: 0 none; */
+    /* border-radius: 3px; */
+    /* border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px; */
+}
+
+/*headings*/
+.fs-title {
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #2C3E50;
+	margin-bottom: 10px;
+}
+.fs-subtitle {
+	font-weight: normal;
+	font-size: 13px;
+	color: #666;
+	margin-bottom: 20px;
+}
+/*progressbar*/
+#progressbar {
+	margin-bottom: 30px;
+	overflow: hidden;
+	/*CSS counters to number the steps*/
+    counter-reset: step;
+    padding: 0;
+}
+#progressbar li {
+	list-style-type: none;
+	color: black;
+
+	font-size: 18px;
+	width: 33.33%;
+	float: left;
+    position: relative;
+    text-align: center;
+}
+#progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 20px;
+    line-height: 20px;
+    display: block;
+    font-size: 10px;
+    color: #adafb3;
+    background: #adafb3;
+    border-radius: 33.33px;
+    margin: 0 auto 5px auto;
+}
+/*progressbar connectors*/
+#progressbar li:after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: #adafb3;
+	position: absolute;
+	left: -50%;
+	top: 9px;
+	z-index: -1; /*put it behind the numbers*/
+}
+#progressbar li:first-child:after {
+	/*connector not needed before the first step*/
+	content: none; 
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before,  #progressbar li.active:after{
+	background: #27AE60;
+	color: #27AE60;
+}
+.fixed_nav .active-link {
+    color: black !important;
+    border-bottom: 1px solid red;
+  }
+  .vert_line::after{
+
+    content:" ";
+    position: absolute;
+    background-color:#F5F5F5 ;
+    height: 100%;
+    width: 3px;
+    left: 274px;
+    top: 0;
+    z-index: 1;
+  }
+.left_arrow{
+    border: 1px solid black;
+    padding: 5px 6.5px;
+    border-radius: 50%;
+}
+
+/* .mg-ve{
+    margin-top: -34px;
+} */
+.cst-input{
+    width: 360px !important;
+    /* padding: 5px !important; */
+    height: 38px !important;
+
+}
+.z-index-1{
+    z-index: -1;
+}
+// .continue{
+//     position: fixed !important;
+//     bottom: 15px !important;
+//     transform: translateX(-50%);
+//     left: 50%;
+// }
+// .back{
+//     position: fixed !important;
+//     bottom: 25px !important;
+
+// }
+b, strong {
+    font-weight: 400;
+}
+.fixedbtm{
+  position: fixed;
+  bottom: 0;
+  width: 80%;
+  background-color: white;
+}
+.translatex{
+  transform: translateX(-15%);
+}
+@media (max-width:576px){
+  .translatex{
+    transform: translateX(0%);
+  }
+    .text_right{
+        text-align: left;
+    }
+    .ver-line::after{
+        display: none;
+    }
+    .fixedbtm{
+      width: 98%;
+     left: 3px;
+    }
+    .fixedbtm::before{
+     left: 0;
+     
+    }
+    #msform fieldset{
+     
+    padding: 20px 30px 200px 30px;
+   
+    }
+    #msform .fixedbtm.one {
+     
+     left: 18px !important;
+     
+      }
+}

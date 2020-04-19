@@ -1,0 +1,212 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template-overviews/simple-sidebar)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+ body {
+    overflow-x: hidden;
+  }
+  #wrapper{
+    overflow: hidden;
+      height: 100vh;
+  }
+  .main-logo{
+    background-color: white;
+    display: inline-block;
+    border-top-right-radius: 33.33px;
+    border-bottom-right-radius: 33.33px;
+  }
+  .main-logo img{
+    padding: 15px 18px 15px 20px;
+    height: 55px;
+  }
+
+  #rot{
+      font-size: 22px;
+      opacity: 0.5;
+      font-weight: 200;
+  transform: rotate(270deg);
+  transform-origin: bottom;
+      position:absolute;
+      bottom:222px;
+      margin-left:-170px;
+      color: white;
+  }
+  .p-custom{
+    padding-left: 115px;
+    padding-top: 100px;
+  }
+  .list-group-item-action{
+  color: #f8f9fa !important;
+  }
+  .sidetabs{
+    border: none;
+    /* color: #f8f9fa; */
+    padding: 10px !important;
+  }
+  .sidetabs:active{
+    background: linear-gradient(
+                       rgba(255,255,255, .3), 
+                       rgba(255,255,255, .3));
+    color: white;
+    border-bottom-left-radius: 33.33px;
+    border-top-left-radius: 33.33px;
+  }
+  
+  #sidebar-wrapper .list-group {
+    width: 15rem;
+  }
+ 
+  .waves{
+    position: absolute;
+    bottom: -13px;
+  
+  }
+  .togglebtn{
+    display: inline;
+  }
+  
+  #page-content-wrapper {
+    min-width: 100vw;
+  }
+  
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+  }
+  
+
+  
+  .content-div{
+    margin-top: -34px;
+    max-height: calc(100vh - 181px);
+    overflow: auto;
+  }
+  .fixed_nav{
+    position: sticky;
+    top: 0;
+    background-color: transparent !important;
+    border: none !important;
+  }
+  .fixed_nav a{
+    color: black !important;
+  }
+  .fixed_nav a:active:hover{
+    color: black !important;
+    border-bottom: 1px solid red;
+  }
+  .back_white{
+    background-color: transparent;
+  }
+  
+  .imagedivs{
+    z-index: -1;
+    width: 390px;
+    height: 250px;
+    /* margin-right: 15px; */
+    margin: 25px 15px 0px 25px;
+    float: left;
+    position: relative;
+    border: 4px solid #E2E2E2;
+  }
+  .imagedivs2{
+    z-index: -1;
+    width: 390px;
+    height: 250px;
+    /* margin-right: 15px; */
+    margin: 25px 15px 0px 30px;
+    float: right;
+    position: relative;
+    border: 4px solid #E2E2E2;
+  }
+  .imagedivs3{
+    z-index: -1;
+    width: 400px;
+    height: 305px;
+    /* margin-right: 15px; */
+    margin: 25px 15px 0px 30px;
+    float: left;
+    position: relative;
+    border: 4px solid #E2E2E2;
+  }
+  .img-trnsfm3 {
+    width: 400px;
+    height: 310px;
+    position: absolute;
+    transform: translate(-8%, -11%);
+}
+.imagedivs4{
+  z-index: -1;
+  width: 390px;
+  height: 250px;
+  /* margin-right: 15px; */
+  margin: 25px 15px 0px 30px;
+  float: right;
+  position: relative;
+  border: 4px solid #E2E2E2;
+}
+  .img-trnsfm{
+    
+    width:390px;
+    height:250px;
+    position: absolute;
+      transform: translate(-8%, -11%);
+  }
+  .content-heading{
+    font-size: 30px;
+  }
+  .contentpara{
+    font-size: 14px;
+    /* color: #BCBCBC; */
+  }
+  
+  @media (min-width: 1024px) {
+    .togglebtn{
+      display: none;
+    }
+    #sidebar-wrapper {
+      margin-left: 0;
+    }
+  
+    #page-content-wrapper {
+      min-width: 0;
+      width: 100%;
+    }
+  
+    #wrapper.toggled #sidebar-wrapper {
+      margin-left: -15rem;
+    }
+  }
+  @media (max-width:768px){
+    .back_white{
+      background-color: white !important;
+    }
+  }
+  @media (max-width:576px){
+    .imagedivs2{
+      width: 320px;
+      
+    }
+    .imagedivs{
+      width: 320px;
+      
+    }
+    .img-trnsfm{
+      
+      width:320px;
+    }
+  }
+  @media (max-width:375px){
+    .imagedivs{
+      width: 240px;
+      height: 200px;
+    }
+    .imagedivs2{
+      width: 240px;
+      height: 200px;
+    }
+    .img-trnsfm {
+      width: 240px;
+      height: 200px;
+      transform: translate(-12%, -14%);
+  }
+  }

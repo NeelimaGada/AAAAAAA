@@ -1,0 +1,37 @@
+    <div class="d-flex" id="wrapper">
+      <!-- Sidebar -->
+      <div class="border-right" id="sidebar-wrapper">
+        <h5 id="rot">Mahindra Annual Supplier Meet, Sydney 2020</h5>
+        <div class="main-logo">
+          <a href=""><img src="../../assets/images/SuppPub.png"></a>
+        </div>
+        <div class="list-group list-group-flush p-custom position-relative">
+          <div class="d-inline position-absolute right_0">
+            <a  routerLink="sydney"  (click)="gotoLOGIN()" routerLinkActive="active-link" class="list-group-item list-group-item-action bg-transparent d-inline sidetabs mb-1">
+              <img src="../../assets/images/LocationIcon.svg"><span class="pl-3">Sydney</span></a><br>
+            <a routerLink="conference" (click)="gotoCONFERENCE()" routerLinkActive="active-link" class="list-group-item list-group-item-action bg-transparent d-inline sidetabs mb-1">
+              <img src="../../assets/images/conferenceIcon.svg"><span class="pl-3">Conference</span></a><br>
+            <a routerLink="registration"   (click)="gotoREGISTRATION()"routerLinkActive="active-link" class="list-group-item list-group-item-action bg-transparent d-inline sidetabs mb-1">
+              <img src="../../assets/images/registrationicon.svg"><span class="pl-3">Registration</span></a><br>
+            <a routerLink="contact" (click)="gotoCONTACT()" routerLinkActive="active-link" class="list-group-item list-group-item-action bg-transparent d-inline sidetabs mb-1">
+              <img src="../../assets/images/contacticon.svg"><span class="pl-3">Contact</span></a><br>
+          </div>
+          
+        </div>
+      </div>
+      <!-- /#sidebar-wrapper -->
+  
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <div class="topnav-img">
+          <div class="togglebtn">
+            <button class="btn btn-primary" id="menu-toggle">Side Menu</button>
+          </div>
+          <div class="waves">
+            <img src=".../../../../assets/images/Innerpagewave.png" class="waveImg">
+          </div>
+        </div><router-outlet></router-outlet>
+         <!-- /#page-content-wrapper -->
+      </div>
+    </div>
+    
